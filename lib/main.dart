@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:mysophobia_io/app_widget.dart';
+import 'package:injectable/injectable.dart';
 
-void main() {
+import 'app_widget.dart';
+import 'injection.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await configureInjection(Environment.prod);
   runApp(App());
 }
