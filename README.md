@@ -1,6 +1,9 @@
 # Mysophobia.io
 
-Another SARS-CoV-2 Tracker. This was a challenge app for myself, I thought why not apply the most common functions on a single app and create the app as early as possible. Took me a day and a half to create Mysophobia.io feel free to try it! Some features might not be fully functional.
+Another SARS-CoV-2 Tracker. This is a #SelfHackathon challenge app. Yes, you heard that right, it's a Self Hackathon app. I made that up, It's a challenge for myself to create apps in a span of two days(Weekends) this is the first one in many more apps to come.
 
 ![alt text](https://i.ibb.co/L0Q6xxn/Show-Case-MYSO-01.png)
 
+Social Media Accounts(Although I'm not very active):
+[Twitter](https://www.twitter.com/lorenzoids)
+[Instagram](https://www.instagram.com/lrnzojanmar)
