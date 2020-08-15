@@ -11,7 +11,7 @@
 ///      fonts:
 ///       - asset: fonts/IconsX.ttf
 ///
-/// 
+///
 /// * Modern Pictograms, Copyright (c) 2012 by John Caserta. All rights reserved.
 ///         Author:    John Caserta
 ///         License:   SIL (http://scripts.sil.org/OFL)
@@ -48,10 +48,22 @@
 ///         Author:    P.J. Onori
 ///         License:   SIL (http://scripts.sil.org/OFL)
 ///         Homepage:  http://somerandomdude.com/work/iconic/
-/// * Material Design Icons, Copyright (C) Google, Inc
-///         Author:    Google
-///         License:   Apache 2.0 (https://www.apache.org/licenses/LICENSE-2.0)
-///         Homepage:  https://design.google.com/icons/
+/// * Fontelico, Copyright (C) 2012 by Fontello project
+///         Author:    Crowdsourced, for Fontello project
+///         License:   SIL (http://scripts.sil.org/OFL)
+///         Homepage:  http://fontello.com
+/// * Meteocons, Copyright (C) 2012 by Alessio Atzeni
+///         Author:    Alessio Atzeni
+///         License:   SIL (http://scripts.sil.org/OFL)
+///         Homepage:  http://www.alessioatzeni.com
+/// * Linearicons Free, Copyright (C) Linearicons.com
+///         Author:    Perxis
+///         License:   CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+///         Homepage:  https://linearicons.com
+/// * RPG Awesome, Copyright (c) 2014, Daniela Howe
+///         Author:    Daniela Howe & Ivan Montiel
+///         License:   SIL (http://scripts.sil.org/OFL)
+///         Homepage:  http://nagoshiashumari.github.io/Rpg-Awesome/
 /// * Font Awesome 5, Copyright (C) 2016 by Dave Gandy
 ///         Author:    Dave Gandy
 ///         License:   SIL (https://github.com/FortAwesome/Font-Awesome/blob/master/LICENSE.txt)
@@ -59,13 +71,13 @@
 /// * Brandico, (C) 2012 by Vitaly Puzrin
 ///         Author:    Crowdsourced, for Fontello project
 ///         License:   SIL (http://scripts.sil.org/OFL)
-///         Homepage:  
+///         Homepage:
 /// * Octicons, Copyright (C) 2020 by GitHub Inc.
 ///         Author:    GitHub
 ///         License:   MIT (http://opensource.org/licenses/mit-license.php)
 ///         Homepage:  https://primer.style/octicons/
 ///
-library icons_x;
+library iconx;
 
 import 'package:flutter/widgets.dart';
 
@@ -74,72 +86,198 @@ class IconsX {
 
   static const _kFontFam = 'IconsX';
 
-  static const IconData home_1 = IconData(0xe800, fontFamily: _kFontFam);
-  static const IconData home_circled = IconData(0xe801, fontFamily: _kFontFam);
-  static const IconData search = IconData(0xe802, fontFamily: _kFontFam);
-  static const IconData search_circled = IconData(0xe803, fontFamily: _kFontFam);
-  static const IconData search_1 = IconData(0xe804, fontFamily: _kFontFam);
-  static const IconData search_2 = IconData(0xe805, fontFamily: _kFontFam);
-  static const IconData search_3 = IconData(0xe806, fontFamily: _kFontFam);
-  static const IconData user_outline = IconData(0xe807, fontFamily: _kFontFam);
-  static const IconData user = IconData(0xe808, fontFamily: _kFontFam);
-  static const IconData user_1 = IconData(0xe809, fontFamily: _kFontFam);
-  static const IconData user_woman = IconData(0xe80a, fontFamily: _kFontFam);
-  static const IconData params = IconData(0xe80b, fontFamily: _kFontFam);
-  static const IconData wrench = IconData(0xe80c, fontFamily: _kFontFam);
-  static const IconData wrench_outline = IconData(0xe80d, fontFamily: _kFontFam);
-  static const IconData info = IconData(0xe80e, fontFamily: _kFontFam);
-  static const IconData help_circled = IconData(0xe80f, fontFamily: _kFontFam);
-  static const IconData question = IconData(0xe810, fontFamily: _kFontFam);
-  static const IconData eye_1 = IconData(0xe811, fontFamily: _kFontFam);
-  static const IconData eye_off = IconData(0xe812, fontFamily: _kFontFam);
-  static const IconData right_dir = IconData(0xe813, fontFamily: _kFontFam);
-  static const IconData left_dir = IconData(0xe814, fontFamily: _kFontFam);
-  static const IconData down_dir = IconData(0xe815, fontFamily: _kFontFam);
-  static const IconData up_dir = IconData(0xe816, fontFamily: _kFontFam);
-  static const IconData left_open_outline = IconData(0xe817, fontFamily: _kFontFam);
-  static const IconData left_open = IconData(0xe818, fontFamily: _kFontFam);
-  static const IconData right_open_outline = IconData(0xe819, fontFamily: _kFontFam);
-  static const IconData right_open = IconData(0xe81a, fontFamily: _kFontFam);
-  static const IconData users = IconData(0xe81b, fontFamily: _kFontFam);
-  static const IconData users_1 = IconData(0xe81c, fontFamily: _kFontFam);
-  static const IconData sort_alphabet = IconData(0xe81d, fontFamily: _kFontFam);
-  static const IconData chart_line = IconData(0xe81e, fontFamily: _kFontFam);
-  static const IconData comment_inv = IconData(0xe81f, fontFamily: _kFontFam);
-  static const IconData comment = IconData(0xe820, fontFamily: _kFontFam);
-  static const IconData chat = IconData(0xe821, fontFamily: _kFontFam);
-  static const IconData credit_card = IconData(0xe822, fontFamily: _kFontFam);
-  static const IconData github_text = IconData(0xe823, fontFamily: _kFontFam);
-  static const IconData logout = IconData(0xe824, fontFamily: _kFontFam);
-  static const IconData cloud_sun = IconData(0xe825, fontFamily: _kFontFam);
-  static const IconData bug_report = IconData(0xe826, fontFamily: _kFontFam);
-  static const IconData report = IconData(0xe827, fontFamily: _kFontFam);
-  static const IconData report_problem = IconData(0xe828, fontFamily: _kFontFam);
-  static const IconData attention = IconData(0xe829, fontFamily: _kFontFam);
-  static const IconData warning_empty = IconData(0xe82a, fontFamily: _kFontFam);
-  static const IconData font = IconData(0xe82b, fontFamily: _kFontFam);
-  static const IconData pencil = IconData(0xe82c, fontFamily: _kFontFam);
-  static const IconData floppy = IconData(0xe82d, fontFamily: _kFontFam);
-  static const IconData ok_outline = IconData(0xe82e, fontFamily: _kFontFam);
-  static const IconData ok = IconData(0xe82f, fontFamily: _kFontFam);
-  static const IconData wifi_outline = IconData(0xe830, fontFamily: _kFontFam);
-  static const IconData github = IconData(0xf113, fontFamily: _kFontFam);
-  static const IconData location_arrow = IconData(0xf124, fontFamily: _kFontFam);
-  static const IconData instagram = IconData(0xf16d, fontFamily: _kFontFam);
-  static const IconData android = IconData(0xf17b, fontFamily: _kFontFam);
-  static const IconData moon = IconData(0xf186, fontFamily: _kFontFam);
-  static const IconData slack = IconData(0xf198, fontFamily: _kFontFam);
-  static const IconData reddit_alien = IconData(0xf281, fontFamily: _kFontFam);
-  static const IconData twitter = IconData(0xf302, fontFamily: _kFontFam);
-  static const IconData versions = IconData(0xf310, fontFamily: _kFontFam);
-  static const IconData graph = IconData(0xf35a, fontFamily: _kFontFam);
-  static const IconData home = IconData(0xf35f, fontFamily: _kFontFam);
-  static const IconData eye_closed = IconData(0xf366, fontFamily: _kFontFam);
-  static const IconData facebook_f = IconData(0xf39e, fontFamily: _kFontFam);
-  static const IconData facebook_messenger = IconData(0xf39f, fontFamily: _kFontFam);
-  static const IconData eye_2 = IconData(0xf3a8, fontFamily: _kFontFam);
-  static const IconData info_1 = IconData(0xf3a9, fontFamily: _kFontFam);
-  static const IconData search_location = IconData(0xf689, fontFamily: _kFontFam);
-  static const IconData cloud_moon = IconData(0xf6c3, fontFamily: _kFontFam);
-  static const IconData menu_outline = IconData(0xe831, fontFamily: _kFontFam);
+  static const IconData home_1 =
+      IconData(0xe800, fontFamily: _kFontFam);
+  static const IconData home_circled =
+      IconData(0xe801, fontFamily: _kFontFam);
+  static const IconData search =
+      IconData(0xe802, fontFamily: _kFontFam);
+  static const IconData search_circled =
+      IconData(0xe803, fontFamily: _kFontFam);
+  static const IconData search_1 =
+      IconData(0xe804, fontFamily: _kFontFam);
+  static const IconData search_2 =
+      IconData(0xe805, fontFamily: _kFontFam);
+  static const IconData search_3 =
+      IconData(0xe806, fontFamily: _kFontFam);
+  static const IconData user_outline =
+      IconData(0xe807, fontFamily: _kFontFam);
+  static const IconData user =
+      IconData(0xe808, fontFamily: _kFontFam);
+  static const IconData user_1 =
+      IconData(0xe809, fontFamily: _kFontFam);
+  static const IconData user_woman =
+      IconData(0xe80a, fontFamily: _kFontFam);
+  static const IconData params =
+      IconData(0xe80b, fontFamily: _kFontFam);
+  static const IconData wrench =
+      IconData(0xe80c, fontFamily: _kFontFam);
+  static const IconData wrench_outline =
+      IconData(0xe80d, fontFamily: _kFontFam);
+  static const IconData info =
+      IconData(0xe80e, fontFamily: _kFontFam);
+  static const IconData help_circled =
+      IconData(0xe80f, fontFamily: _kFontFam);
+  static const IconData question =
+      IconData(0xe810, fontFamily: _kFontFam);
+  static const IconData eye_1 =
+      IconData(0xe811, fontFamily: _kFontFam);
+  static const IconData eye_off =
+      IconData(0xe812, fontFamily: _kFontFam);
+  static const IconData right_dir =
+      IconData(0xe813, fontFamily: _kFontFam);
+  static const IconData left_dir =
+      IconData(0xe814, fontFamily: _kFontFam);
+  static const IconData down_dir =
+      IconData(0xe815, fontFamily: _kFontFam);
+  static const IconData up_dir =
+      IconData(0xe816, fontFamily: _kFontFam);
+  static const IconData left_open_outline =
+      IconData(0xe817, fontFamily: _kFontFam);
+  static const IconData left_open =
+      IconData(0xe818, fontFamily: _kFontFam);
+  static const IconData right_open_outline =
+      IconData(0xe819, fontFamily: _kFontFam);
+  static const IconData right_open =
+      IconData(0xe81a, fontFamily: _kFontFam);
+  static const IconData users =
+      IconData(0xe81b, fontFamily: _kFontFam);
+  static const IconData users_1 =
+      IconData(0xe81c, fontFamily: _kFontFam);
+  static const IconData sort_alphabet =
+      IconData(0xe81d, fontFamily: _kFontFam);
+  static const IconData chart_line =
+      IconData(0xe81e, fontFamily: _kFontFam);
+  static const IconData comment_inv =
+      IconData(0xe81f, fontFamily: _kFontFam);
+  static const IconData comment =
+      IconData(0xe820, fontFamily: _kFontFam);
+  static const IconData chat =
+      IconData(0xe821, fontFamily: _kFontFam);
+  static const IconData credit_card =
+      IconData(0xe822, fontFamily: _kFontFam);
+  static const IconData github_text =
+      IconData(0xe823, fontFamily: _kFontFam);
+  static const IconData logout =
+      IconData(0xe824, fontFamily: _kFontFam);
+  static const IconData cloud_sun =
+      IconData(0xe825, fontFamily: _kFontFam);
+  static const IconData warning =
+      IconData(0xe826, fontFamily: _kFontFam);
+  static const IconData emo_laugh =
+      IconData(0xe827, fontFamily: _kFontFam);
+  static const IconData emo_cry =
+      IconData(0xe828, fontFamily: _kFontFam);
+  static const IconData emo_shoot =
+      IconData(0xe829, fontFamily: _kFontFam);
+  static const IconData warning_empty =
+      IconData(0xe82a, fontFamily: _kFontFam);
+  static const IconData font =
+      IconData(0xe82b, fontFamily: _kFontFam);
+  static const IconData pencil =
+      IconData(0xe82c, fontFamily: _kFontFam);
+  static const IconData floppy =
+      IconData(0xe82d, fontFamily: _kFontFam);
+  static const IconData ok_outline =
+      IconData(0xe82e, fontFamily: _kFontFam);
+  static const IconData ok =
+      IconData(0xe82f, fontFamily: _kFontFam);
+  static const IconData wifi_outline =
+      IconData(0xe830, fontFamily: _kFontFam);
+  static const IconData menu_outline =
+      IconData(0xe831, fontFamily: _kFontFam);
+  static const IconData globe =
+      IconData(0xe832, fontFamily: _kFontFam);
+  static const IconData heart_empty =
+      IconData(0xe833, fontFamily: _kFontFam);
+  static const IconData heart =
+      IconData(0xe834, fontFamily: _kFontFam);
+  static const IconData person =
+      IconData(0xe835, fontFamily: _kFontFam);
+  static const IconData female =
+      IconData(0xe836, fontFamily: _kFontFam);
+  static const IconData male =
+      IconData(0xe837, fontFamily: _kFontFam);
+  static const IconData na =
+      IconData(0xe838, fontFamily: _kFontFam);
+  static const IconData key =
+      IconData(0xe839, fontFamily: _kFontFam);
+  static const IconData hdd =
+      IconData(0xe83a, fontFamily: _kFontFam);
+  static const IconData emo_thumbsup =
+      IconData(0xe83b, fontFamily: _kFontFam);
+  static const IconData emo_sunglasses =
+      IconData(0xe83c, fontFamily: _kFontFam);
+  static const IconData emo_beer =
+      IconData(0xe83d, fontFamily: _kFontFam);
+  static const IconData coffee_cup =
+      IconData(0xe848, fontFamily: _kFontFam);
+  static const IconData death_skull =
+      IconData(0xe98c, fontFamily: _kFontFam);
+  static const IconData health_decrease =
+      IconData(0xe9f3, fontFamily: _kFontFam);
+  static const IconData health_increase =
+      IconData(0xe9f4, fontFamily: _kFontFam);
+  static const IconData health =
+      IconData(0xe9f5, fontFamily: _kFontFam);
+  static const IconData star =
+      IconData(0xf005, fontFamily: _kFontFam);
+  static const IconData money =
+      IconData(0xf0d6, fontFamily: _kFontFam);
+  static const IconData hospital_1 =
+      IconData(0xf0f8, fontFamily: _kFontFam);
+  static const IconData github =
+      IconData(0xf113, fontFamily: _kFontFam);
+  static const IconData gamepad =
+      IconData(0xf11b, fontFamily: _kFontFam);
+  static const IconData location_arrow =
+      IconData(0xf124, fontFamily: _kFontFam);
+  static const IconData dollar =
+      IconData(0xf155, fontFamily: _kFontFam);
+  static const IconData bitcoin =
+      IconData(0xf15a, fontFamily: _kFontFam);
+  static const IconData instagram =
+      IconData(0xf16d, fontFamily: _kFontFam);
+  static const IconData android =
+      IconData(0xf17b, fontFamily: _kFontFam);
+  static const IconData moon =
+      IconData(0xf186, fontFamily: _kFontFam);
+  static const IconData bug =
+      IconData(0xf188, fontFamily: _kFontFam);
+  static const IconData slack =
+      IconData(0xf198, fontFamily: _kFontFam);
+  static const IconData child =
+      IconData(0xf1ae, fontFamily: _kFontFam);
+  static const IconData heartbeat =
+      IconData(0xf21e, fontFamily: _kFontFam);
+  static const IconData hand_peace =
+      IconData(0xf25b, fontFamily: _kFontFam);
+  static const IconData reddit_alien =
+      IconData(0xf281, fontFamily: _kFontFam);
+  static const IconData twitter =
+      IconData(0xf302, fontFamily: _kFontFam);
+  static const IconData versions =
+      IconData(0xf310, fontFamily: _kFontFam);
+  static const IconData graph =
+      IconData(0xf35a, fontFamily: _kFontFam);
+  static const IconData home =
+      IconData(0xf35f, fontFamily: _kFontFam);
+  static const IconData eye_closed =
+      IconData(0xf366, fontFamily: _kFontFam);
+  static const IconData facebook_f =
+      IconData(0xf39e, fontFamily: _kFontFam);
+  static const IconData facebook_messenger =
+      IconData(0xf39f, fontFamily: _kFontFam);
+  static const IconData eye_2 =
+      IconData(0xf3a8, fontFamily: _kFontFam);
+  static const IconData info_1 =
+      IconData(0xf3a9, fontFamily: _kFontFam);
+  static const IconData ruby =
+      IconData(0xf3c9, fontFamily: _kFontFam);
+  static const IconData syringe =
+      IconData(0xf48e, fontFamily: _kFontFam);
+  static const IconData search_location =
+      IconData(0xf689, fontFamily: _kFontFam);
+  static const IconData cloud_moon =
+      IconData(0xf6c3, fontFamily: _kFontFam);
 }

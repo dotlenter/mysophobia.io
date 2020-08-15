@@ -10,7 +10,7 @@ class GlobalTotals extends Equatable {
   final int todayRecovered;
   final int active;
   final int critical;
-  final int casesPerOneMillion;
+  final double casesPerOneMillion;
   final double deathsPerOneMillion;
   final int tests;
   final double testsPerOneMillion;

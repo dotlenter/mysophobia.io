@@ -118,12 +118,11 @@ class _BouncyState extends State<Bouncy> with SingleTickerProviderStateMixin {
   /// We reverse the animation and notify the user of a press event
   void _onTapUp(PointerUpEvent event) {
     Future.delayed(duration, () {
+      if (!_isOutsideChildBox(event.position)) {
+        _triggerOnPressed();
+      }
       _controller.reverse();
     });
-
-    if (!_isOutsideChildBox(event.position)) {
-      _triggerOnPressed();
-    }
   }
 
   /// Here we are listening on each change when drag event is triggered
@@ -132,9 +131,8 @@ class _BouncyState extends State<Bouncy> with SingleTickerProviderStateMixin {
     final Offset touchPosition = event.position;
     _isOutside = _isOutsideChildBox(touchPosition);
     if (_isOutside) {
-      Future.delayed(duration, () {
-        _controller.reverse();
-      });
+      _controller.reverse();
+      return;
     }
   }
 
@@ -149,14 +147,18 @@ class _BouncyState extends State<Bouncy> with SingleTickerProviderStateMixin {
   /// Method called when we need to now if a specific touch position is inside the given
   /// child render box
   bool _isOutsideChildBox(Offset touchPosition) {
-    final RenderBox childRenderBox =
-        _childKey.currentContext.findRenderObject() as RenderBox;
-    final Size childSize = childRenderBox.size;
-    final Offset childPosition = childRenderBox.localToGlobal(Offset.zero);
+    try {
+      final RenderBox childRenderBox =
+          _childKey.currentContext.findRenderObject() as RenderBox;
+      final Size childSize = childRenderBox.size;
+      final Offset childPosition = childRenderBox.localToGlobal(Offset.zero);
 
-    return touchPosition.dx < childPosition.dx ||
-        touchPosition.dx > childPosition.dx + childSize.width ||
-        touchPosition.dy < childPosition.dy ||
-        touchPosition.dy > childPosition.dy + childSize.height;
+      return touchPosition.dx < childPosition.dx ||
+          touchPosition.dx > childPosition.dx + childSize.width ||
+          touchPosition.dy < childPosition.dy ||
+          touchPosition.dy > childPosition.dy + childSize.height;
+    } catch (e) {
+      return true;
+    }
   }
 }
