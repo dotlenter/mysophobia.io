@@ -7,6 +7,7 @@ class TotalWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final formatter = NumberFormat('#,###');
     return Column(
       children: [
         Row(
@@ -14,14 +15,14 @@ class TotalWidget extends StatelessWidget {
             ExpandedColorCardStatus(
               color: const Color(0xffffb259),
               title: 'Cases',
-              statusText: total.cases.toString(),
+              statusText: formatter.format(total.cases),
               titleSize: ResponsiveSizeUtil.getInstance().setSp(26),
               statusTextSize: ResponsiveSizeUtil.getInstance().setSp(32),
             ),
             ExpandedColorCardStatus(
               color: const Color(0xffff5959),
               title: 'Deaths',
-              statusText: total.deaths.toString(),
+              statusText: formatter.format(total.deaths),
               titleSize: ResponsiveSizeUtil.getInstance().setSp(26),
               statusTextSize: ResponsiveSizeUtil.getInstance().setSp(32),
             ),
@@ -32,21 +33,21 @@ class TotalWidget extends StatelessWidget {
             ExpandedColorCardStatus(
               color: const Color(0xff4cd97b),
               title: 'Recovered',
-              statusText: total.recovered.toString(),
+              statusText: formatter.format(total.recovered),
               titleSize: ResponsiveSizeUtil.getInstance().setSp(26),
               statusTextSize: ResponsiveSizeUtil.getInstance().setSp(32),
             ),
             ExpandedColorCardStatus(
               color: const Color(0xff4cb5ff),
               title: 'Active',
-              statusText: total.active.toString(),
+              statusText: formatter.format(total.active),
               titleSize: ResponsiveSizeUtil.getInstance().setSp(26),
               statusTextSize: ResponsiveSizeUtil.getInstance().setSp(32),
             ),
             ExpandedColorCardStatus(
               color: const Color(0xff9059ff),
               title: 'Serious',
-              statusText: total.critical.toString(),
+              statusText: formatter.format(total.critical),
               titleSize: ResponsiveSizeUtil.getInstance().setSp(26),
               statusTextSize: ResponsiveSizeUtil.getInstance().setSp(32),
             ),

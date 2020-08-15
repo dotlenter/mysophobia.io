@@ -13,6 +13,9 @@ import '../../cubits/location/location_cubit.dart';
 import '../../cubits/risk_area/risk_area_cubit.dart';
 
 class TrackerPage extends StatefulWidget {
+  final VoidCallback onInfoPress;
+
+  const TrackerPage({Key key, this.onInfoPress}) : super(key: key);
   @override
   _TrackerPageState createState() => _TrackerPageState();
 }
@@ -127,14 +130,14 @@ class _TrackerPageState extends State<TrackerPage> {
                       ),
                       Row(
                         children: [
-                          Bouncy(
-                            duration: const Duration(milliseconds: 100),
-                            onPressed: () {},
-                            child: Icon(
-                              IconsX.comment_inv,
-                              color: Colors.white.withOpacity(0.5),
-                            ),
-                          ),
+                          // Bouncy(
+                          //   duration: const Duration(milliseconds: 100),
+                          //   onPressed: () {},
+                          //   child: Icon(
+                          //     IconsX.comment_inv,
+                          //     color: Colors.white.withOpacity(0.5),
+                          //   ),
+                          // ),
                           const SizedBox(width: 25),
                           Bouncy(
                             duration: const Duration(milliseconds: 100),

@@ -152,16 +152,16 @@ class _CountryPageState extends State<CountryPage>
     );
   }
 
-  Container _testWidget() {
-    return Container(
-        child: const Text(
-      'Test Miracle',
-      style: TextStyle(
-        color: Colors.white,
-        fontSize: 24,
-      ),
-    ));
-  }
+  // Container _testWidget() {
+  //   return Container(
+  //       child: const Text(
+  //     'Test Miracle',
+  //     style: TextStyle(
+  //       color: Colors.white,
+  //       fontSize: 24,
+  //     ),
+  //   ));
+  // }
 
   Container _buildRequestLocation() {
     return Container(
@@ -214,16 +214,17 @@ class _CountryPageState extends State<CountryPage>
     );
   }
 
-  Column _buildLoading() => Column(
-        children: [
-          const Center(
-            child: CircularProgressIndicator(
-              strokeWidth: 4,
-              valueColor: AlwaysStoppedAnimation<Color>(Color(0xffffffff)),
-            ),
-          ),
-        ],
-      );
+  Column _buildLoading() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        const SpinKitChasingDots(
+          color: Colors.white,
+        ),
+      ],
+    );
+  }
 
   BlocProvider<CountryCubit> _loadCountryTotals() {
     return BlocProvider(

@@ -1,7 +1,6 @@
 library expanded_color_card;
 
 import 'package:flutter/material.dart';
-import 'package:mysophobia_io/core/plugins/bouncy/bouncy.dart';
 
 class ExpandedColorCardStatus extends StatelessWidget {
   final String title;
@@ -22,12 +21,6 @@ class ExpandedColorCardStatus extends StatelessWidget {
     this.titleSize,
     this.statusTextSize,
   }) : super(key: key);
-
-  void _triggerOnPressed() {
-    if (onPressed != null) {
-      onPressed();
-    }
-  }
 
   @override
   Widget build(BuildContext context) {

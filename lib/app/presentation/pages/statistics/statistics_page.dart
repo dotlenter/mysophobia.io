@@ -8,6 +8,10 @@ import '../country/country_page.dart';
 import '../global/global_page.dart';
 
 class StatisticPage extends StatefulWidget {
+  final VoidCallback onInfoPress;
+
+  const StatisticPage({Key key, this.onInfoPress}) : super(key: key);
+  
   @override
   _StatisticPageState createState() => _StatisticPageState();
 }
@@ -43,14 +47,14 @@ class _StatisticPageState extends State<StatisticPage>
                   ),
                   Row(
                     children: [
-                      Bouncy(
-                        duration: const Duration(milliseconds: 100),
-                        onPressed: () {},
-                        child: Icon(
-                          IconsX.comment_inv,
-                          color: Colors.white.withOpacity(0.5),
-                        ),
-                      ),
+                      // Bouncy(
+                      //   duration: const Duration(milliseconds: 100),
+                      //   onPressed: () {},
+                      //   child: Icon(
+                      //     IconsX.comment_inv,
+                      //     color: Colors.white.withOpacity(0.5),
+                      //   ),
+                      // ),
                       const SizedBox(width: 25),
                       Bouncy(
                         duration: const Duration(milliseconds: 100),

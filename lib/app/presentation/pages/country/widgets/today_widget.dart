@@ -6,6 +6,7 @@ class TodayWidget extends StatelessWidget {
   const TodayWidget({Key key, this.total}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    final formatter = NumberFormat('#,###');
     return Column(
       children: [
         Row(
@@ -13,14 +14,14 @@ class TodayWidget extends StatelessWidget {
             ExpandedColorCardStatus(
               color: const Color(0xffffb259),
               title: 'Cases',
-              statusText: total.todayCases.toString(),
+              statusText: formatter.format(total.todayCases),
               titleSize: ResponsiveSizeUtil.getInstance().setSp(26),
               statusTextSize: ResponsiveSizeUtil.getInstance().setSp(32),
             ),
             ExpandedColorCardStatus(
               color: const Color(0xffff5959),
               title: 'Deaths',
-              statusText: total.todayDeaths.toString(),
+              statusText: formatter.format(total.todayDeaths),
               titleSize: ResponsiveSizeUtil.getInstance().setSp(26),
               statusTextSize: ResponsiveSizeUtil.getInstance().setSp(32),
             ),
@@ -31,7 +32,7 @@ class TodayWidget extends StatelessWidget {
             ExpandedColorCardStatus(
               color: const Color(0xff4cd97b),
               title: 'Recovered',
-              statusText: total.todayRecovered.toString(),
+              statusText: formatter.format(total.todayRecovered),
               titleSize: ResponsiveSizeUtil.getInstance().setSp(26),
               statusTextSize: ResponsiveSizeUtil.getInstance().setSp(32),
             ),
