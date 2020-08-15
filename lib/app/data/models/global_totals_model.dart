@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
-import 'package:mysophobia_io/app/domain/entities/global_totals.dart';
+
+import '../../domain/entities/global_totals.dart';
 
 class GlobalTotalsModel extends GlobalTotals {
   final int updated;
@@ -11,7 +12,7 @@ class GlobalTotalsModel extends GlobalTotals {
   final int todayRecovered;
   final int active;
   final int critical;
-  final int casesPerOneMillion;
+  final double casesPerOneMillion;
   final double deathsPerOneMillion;
   final int tests;
   final double testsPerOneMillion;
@@ -81,17 +82,17 @@ class GlobalTotalsModel extends GlobalTotals {
         todayRecovered: json['todayRecovered'],
         active: json['active'],
         critical: json['critical'],
-        casesPerOneMillion: json['casesPerOneMillion'],
-        deathsPerOneMillion: json['deathsPerOneMillion'],
+        casesPerOneMillion: json['casesPerOneMillion'].toDouble(),
+        deathsPerOneMillion: json['deathsPerOneMillion'].toDouble(),
         tests: json['tests'],
-        testsPerOneMillion: json['testsPerOneMillion'],
+        testsPerOneMillion: json['testsPerOneMillion'].toDouble(),
         population: json['population'],
         oneCasePerPeople: json['oneCasePerPeople'],
         oneDeathPerPeople: json['oneDeathPerPeople'],
         oneTestPerPeople: json['oneTestPerPeople'],
-        activePerOneMillion: json['activePerOneMillion'],
-        recoveredPerOneMillion: json['recoveredPerOneMillion'],
-        criticalPerOneMillion: json['criticalPerOneMillion'],
+        activePerOneMillion: json['activePerOneMillion'].toDouble(),
+        recoveredPerOneMillion: json['recoveredPerOneMillion'].toDouble(),
+        criticalPerOneMillion: json['criticalPerOneMillion'].toDouble(),
         affectedCountries: json['affectedCountries'],
       );
 

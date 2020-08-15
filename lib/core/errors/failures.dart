@@ -9,4 +9,10 @@ abstract class Failure with _$Failure {
   const factory Failure.networkError() = NetworkError;
   const factory Failure.cachingError() = CachingError;
   const factory Failure.forbiddenAccessToURLError() = ForbiddenAccessToURLError;
+  const factory Failure.emptyError() = EmptyError;
+  const factory Failure.locationError() = LocationError;
+  const factory Failure.invalid() = Invalid;
+  const factory Failure.permissionDeniedError() = PermissionDeniedError;
+  const factory Failure.disabledLocationServiceError() =
+      DisabledLocationService;
 }

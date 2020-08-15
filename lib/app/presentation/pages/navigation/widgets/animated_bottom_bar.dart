@@ -25,8 +25,8 @@ class _AnimatedBottomBarState extends State<AnimatedBottomBar>
     return Material(
       elevation: 20.0,
       color: Colors.white,
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: _buildBarItems(),
@@ -39,81 +39,45 @@ class _AnimatedBottomBarState extends State<AnimatedBottomBar>
     final List<Widget> _barItems = [];
     for (int i = 0; i < widget.barItems.length; i++) {
       final BarItem item = widget.barItems[i];
-      final bool isSelected = selectedBarIndex == i;
-      _barItems.add(InkWell(
-        borderRadius: BorderRadius.circular(15),
-        splashColor: Colors.transparent,
-        onTap: () {
-          setState(() {
-            selectedBarIndex = i;
-            widget.onBarTap(selectedBarIndex);
-          });
-        },
-        child: AnimatedContainer(
-          padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 5.0),
-          duration: widget.animationDuration,
-          decoration: isSelected
-              ? BoxDecoration(
-                  gradient: const LinearGradient(
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight,
-                    colors: [
-                      Colors.blue,
-                      Color(0xFF00cec9),
-                    ],
-                  ),
-                  borderRadius: const BorderRadius.all(
-                    Radius.circular(15),
-                  ),
-                  boxShadow: [
-                    BoxShadow(
-                      color: const Color(0xFF00cec9).withAlpha(70),
-                      blurRadius: 5.0,
-                      spreadRadius: 1.0,
-                      offset: const Offset(
-                        0.0,
-                        2.0,
-                      ),
-                    ),
-                  ],
-                )
-              : const BoxDecoration(
-                  color: Colors.transparent,
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(15),
-                  ),
-                ),
+      final bool isSelected = (selectedBarIndex == i);
+      _barItems.add(
+        InkWell(
+          borderRadius: BorderRadius.circular(15),
+          splashColor: Colors.transparent,
+          onTap: () {
+            setState(() {
+              selectedBarIndex = i;
+              widget.onBarTap(selectedBarIndex);
+            });
+          },
           child: Bouncy(
             duration: const Duration(milliseconds: 20),
             onPressed: () {},
-            child: Row(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
               children: <Widget>[
                 Icon(
                   item.icon,
-                  color: isSelected ? Colors.white : Colors.black54,
+                  color: isSelected
+                      ? const Color(0xff273c75)
+                      : const Color(0xff273c75).withOpacity(0.4),
                   size: widget.barStyle.iconSize,
                 ),
-                SizedBox(
-                  width: ResponsiveSizeUtil.getInstance().setWidth(20),
-                ),
-                AnimatedSize(
-                  duration: widget.animationDuration,
-                  curve: Curves.easeInOut,
-                  vsync: this,
-                  child: Text(
-                    isSelected ? item.text : '',
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontFamily: widget.barStyle.fontFamily,
-                        fontWeight: widget.barStyle.fontWeight,
-                        fontSize: widget.barStyle.fontSize),
+                Text(
+                  item.text,
+                  style: TextStyle(
+                    color: isSelected
+                        ? const Color(0xff273c75)
+                        : const Color(0xff273c75).withOpacity(0.4),
+                    fontSize: 14,
+                    fontWeight: FontWeight.bold
                   ),
-                )
+                ),
               ],
             ),
           ),
         ),
-      ));
+      );
     }
     return _barItems;
   }
@@ -135,8 +99,15 @@ class BarStyle {
 class BarItem {
   String text;
   IconData icon;
+  IconData selectedIcon;
   Color color;
   Widget pageWidget;
 
-  BarItem({this.text, this.icon, this.color, this.pageWidget});
+  BarItem({
+    this.text,
+    @required this.icon,
+    @required this.color,
+    this.selectedIcon,
+    this.pageWidget,
+  });
 }

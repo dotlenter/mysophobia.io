@@ -41,6 +41,31 @@ class _$FailureTearOff {
   ForbiddenAccessToURLError forbiddenAccessToURLError() {
     return const ForbiddenAccessToURLError();
   }
+
+// ignore: unused_element
+  EmptyError emptyError() {
+    return const EmptyError();
+  }
+
+// ignore: unused_element
+  LocationError locationError() {
+    return const LocationError();
+  }
+
+// ignore: unused_element
+  Invalid invalid() {
+    return const Invalid();
+  }
+
+// ignore: unused_element
+  PermissionDeniedError permissionDeniedError() {
+    return const PermissionDeniedError();
+  }
+
+// ignore: unused_element
+  DisabledLocationService disabledLocationServiceError() {
+    return const DisabledLocationService();
+  }
 }
 
 // ignore: unused_element
@@ -55,6 +80,11 @@ mixin _$Failure {
     @required Result networkError(),
     @required Result cachingError(),
     @required Result forbiddenAccessToURLError(),
+    @required Result emptyError(),
+    @required Result locationError(),
+    @required Result invalid(),
+    @required Result permissionDeniedError(),
+    @required Result disabledLocationServiceError(),
   });
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
@@ -64,6 +94,11 @@ mixin _$Failure {
     Result networkError(),
     Result cachingError(),
     Result forbiddenAccessToURLError(),
+    Result emptyError(),
+    Result locationError(),
+    Result invalid(),
+    Result permissionDeniedError(),
+    Result disabledLocationServiceError(),
     @required Result orElse(),
   });
   @optionalTypeArgs
@@ -74,6 +109,12 @@ mixin _$Failure {
     @required Result networkError(NetworkError value),
     @required Result cachingError(CachingError value),
     @required Result forbiddenAccessToURLError(ForbiddenAccessToURLError value),
+    @required Result emptyError(EmptyError value),
+    @required Result locationError(LocationError value),
+    @required Result invalid(Invalid value),
+    @required Result permissionDeniedError(PermissionDeniedError value),
+    @required
+        Result disabledLocationServiceError(DisabledLocationService value),
   });
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
@@ -83,6 +124,11 @@ mixin _$Failure {
     Result networkError(NetworkError value),
     Result cachingError(CachingError value),
     Result forbiddenAccessToURLError(ForbiddenAccessToURLError value),
+    Result emptyError(EmptyError value),
+    Result locationError(LocationError value),
+    Result invalid(Invalid value),
+    Result permissionDeniedError(PermissionDeniedError value),
+    Result disabledLocationServiceError(DisabledLocationService value),
     @required Result orElse(),
   });
 }
@@ -141,6 +187,11 @@ class _$ServerError implements ServerError {
     @required Result networkError(),
     @required Result cachingError(),
     @required Result forbiddenAccessToURLError(),
+    @required Result emptyError(),
+    @required Result locationError(),
+    @required Result invalid(),
+    @required Result permissionDeniedError(),
+    @required Result disabledLocationServiceError(),
   }) {
     assert(serverError != null);
     assert(socketError != null);
@@ -148,6 +199,11 @@ class _$ServerError implements ServerError {
     assert(networkError != null);
     assert(cachingError != null);
     assert(forbiddenAccessToURLError != null);
+    assert(emptyError != null);
+    assert(locationError != null);
+    assert(invalid != null);
+    assert(permissionDeniedError != null);
+    assert(disabledLocationServiceError != null);
     return serverError();
   }
 
@@ -160,6 +216,11 @@ class _$ServerError implements ServerError {
     Result networkError(),
     Result cachingError(),
     Result forbiddenAccessToURLError(),
+    Result emptyError(),
+    Result locationError(),
+    Result invalid(),
+    Result permissionDeniedError(),
+    Result disabledLocationServiceError(),
     @required Result orElse(),
   }) {
     assert(orElse != null);
@@ -178,6 +239,12 @@ class _$ServerError implements ServerError {
     @required Result networkError(NetworkError value),
     @required Result cachingError(CachingError value),
     @required Result forbiddenAccessToURLError(ForbiddenAccessToURLError value),
+    @required Result emptyError(EmptyError value),
+    @required Result locationError(LocationError value),
+    @required Result invalid(Invalid value),
+    @required Result permissionDeniedError(PermissionDeniedError value),
+    @required
+        Result disabledLocationServiceError(DisabledLocationService value),
   }) {
     assert(serverError != null);
     assert(socketError != null);
@@ -185,6 +252,11 @@ class _$ServerError implements ServerError {
     assert(networkError != null);
     assert(cachingError != null);
     assert(forbiddenAccessToURLError != null);
+    assert(emptyError != null);
+    assert(locationError != null);
+    assert(invalid != null);
+    assert(permissionDeniedError != null);
+    assert(disabledLocationServiceError != null);
     return serverError(this);
   }
 
@@ -197,6 +269,11 @@ class _$ServerError implements ServerError {
     Result networkError(NetworkError value),
     Result cachingError(CachingError value),
     Result forbiddenAccessToURLError(ForbiddenAccessToURLError value),
+    Result emptyError(EmptyError value),
+    Result locationError(LocationError value),
+    Result invalid(Invalid value),
+    Result permissionDeniedError(PermissionDeniedError value),
+    Result disabledLocationServiceError(DisabledLocationService value),
     @required Result orElse(),
   }) {
     assert(orElse != null);
@@ -252,6 +329,11 @@ class _$SocketError implements SocketError {
     @required Result networkError(),
     @required Result cachingError(),
     @required Result forbiddenAccessToURLError(),
+    @required Result emptyError(),
+    @required Result locationError(),
+    @required Result invalid(),
+    @required Result permissionDeniedError(),
+    @required Result disabledLocationServiceError(),
   }) {
     assert(serverError != null);
     assert(socketError != null);
@@ -259,6 +341,11 @@ class _$SocketError implements SocketError {
     assert(networkError != null);
     assert(cachingError != null);
     assert(forbiddenAccessToURLError != null);
+    assert(emptyError != null);
+    assert(locationError != null);
+    assert(invalid != null);
+    assert(permissionDeniedError != null);
+    assert(disabledLocationServiceError != null);
     return socketError();
   }
 
@@ -271,6 +358,11 @@ class _$SocketError implements SocketError {
     Result networkError(),
     Result cachingError(),
     Result forbiddenAccessToURLError(),
+    Result emptyError(),
+    Result locationError(),
+    Result invalid(),
+    Result permissionDeniedError(),
+    Result disabledLocationServiceError(),
     @required Result orElse(),
   }) {
     assert(orElse != null);
@@ -289,6 +381,12 @@ class _$SocketError implements SocketError {
     @required Result networkError(NetworkError value),
     @required Result cachingError(CachingError value),
     @required Result forbiddenAccessToURLError(ForbiddenAccessToURLError value),
+    @required Result emptyError(EmptyError value),
+    @required Result locationError(LocationError value),
+    @required Result invalid(Invalid value),
+    @required Result permissionDeniedError(PermissionDeniedError value),
+    @required
+        Result disabledLocationServiceError(DisabledLocationService value),
   }) {
     assert(serverError != null);
     assert(socketError != null);
@@ -296,6 +394,11 @@ class _$SocketError implements SocketError {
     assert(networkError != null);
     assert(cachingError != null);
     assert(forbiddenAccessToURLError != null);
+    assert(emptyError != null);
+    assert(locationError != null);
+    assert(invalid != null);
+    assert(permissionDeniedError != null);
+    assert(disabledLocationServiceError != null);
     return socketError(this);
   }
 
@@ -308,6 +411,11 @@ class _$SocketError implements SocketError {
     Result networkError(NetworkError value),
     Result cachingError(CachingError value),
     Result forbiddenAccessToURLError(ForbiddenAccessToURLError value),
+    Result emptyError(EmptyError value),
+    Result locationError(LocationError value),
+    Result invalid(Invalid value),
+    Result permissionDeniedError(PermissionDeniedError value),
+    Result disabledLocationServiceError(DisabledLocationService value),
     @required Result orElse(),
   }) {
     assert(orElse != null);
@@ -363,6 +471,11 @@ class _$NotFoundError implements NotFoundError {
     @required Result networkError(),
     @required Result cachingError(),
     @required Result forbiddenAccessToURLError(),
+    @required Result emptyError(),
+    @required Result locationError(),
+    @required Result invalid(),
+    @required Result permissionDeniedError(),
+    @required Result disabledLocationServiceError(),
   }) {
     assert(serverError != null);
     assert(socketError != null);
@@ -370,6 +483,11 @@ class _$NotFoundError implements NotFoundError {
     assert(networkError != null);
     assert(cachingError != null);
     assert(forbiddenAccessToURLError != null);
+    assert(emptyError != null);
+    assert(locationError != null);
+    assert(invalid != null);
+    assert(permissionDeniedError != null);
+    assert(disabledLocationServiceError != null);
     return notFoundError();
   }
 
@@ -382,6 +500,11 @@ class _$NotFoundError implements NotFoundError {
     Result networkError(),
     Result cachingError(),
     Result forbiddenAccessToURLError(),
+    Result emptyError(),
+    Result locationError(),
+    Result invalid(),
+    Result permissionDeniedError(),
+    Result disabledLocationServiceError(),
     @required Result orElse(),
   }) {
     assert(orElse != null);
@@ -400,6 +523,12 @@ class _$NotFoundError implements NotFoundError {
     @required Result networkError(NetworkError value),
     @required Result cachingError(CachingError value),
     @required Result forbiddenAccessToURLError(ForbiddenAccessToURLError value),
+    @required Result emptyError(EmptyError value),
+    @required Result locationError(LocationError value),
+    @required Result invalid(Invalid value),
+    @required Result permissionDeniedError(PermissionDeniedError value),
+    @required
+        Result disabledLocationServiceError(DisabledLocationService value),
   }) {
     assert(serverError != null);
     assert(socketError != null);
@@ -407,6 +536,11 @@ class _$NotFoundError implements NotFoundError {
     assert(networkError != null);
     assert(cachingError != null);
     assert(forbiddenAccessToURLError != null);
+    assert(emptyError != null);
+    assert(locationError != null);
+    assert(invalid != null);
+    assert(permissionDeniedError != null);
+    assert(disabledLocationServiceError != null);
     return notFoundError(this);
   }
 
@@ -419,6 +553,11 @@ class _$NotFoundError implements NotFoundError {
     Result networkError(NetworkError value),
     Result cachingError(CachingError value),
     Result forbiddenAccessToURLError(ForbiddenAccessToURLError value),
+    Result emptyError(EmptyError value),
+    Result locationError(LocationError value),
+    Result invalid(Invalid value),
+    Result permissionDeniedError(PermissionDeniedError value),
+    Result disabledLocationServiceError(DisabledLocationService value),
     @required Result orElse(),
   }) {
     assert(orElse != null);
@@ -474,6 +613,11 @@ class _$NetworkError implements NetworkError {
     @required Result networkError(),
     @required Result cachingError(),
     @required Result forbiddenAccessToURLError(),
+    @required Result emptyError(),
+    @required Result locationError(),
+    @required Result invalid(),
+    @required Result permissionDeniedError(),
+    @required Result disabledLocationServiceError(),
   }) {
     assert(serverError != null);
     assert(socketError != null);
@@ -481,6 +625,11 @@ class _$NetworkError implements NetworkError {
     assert(networkError != null);
     assert(cachingError != null);
     assert(forbiddenAccessToURLError != null);
+    assert(emptyError != null);
+    assert(locationError != null);
+    assert(invalid != null);
+    assert(permissionDeniedError != null);
+    assert(disabledLocationServiceError != null);
     return networkError();
   }
 
@@ -493,6 +642,11 @@ class _$NetworkError implements NetworkError {
     Result networkError(),
     Result cachingError(),
     Result forbiddenAccessToURLError(),
+    Result emptyError(),
+    Result locationError(),
+    Result invalid(),
+    Result permissionDeniedError(),
+    Result disabledLocationServiceError(),
     @required Result orElse(),
   }) {
     assert(orElse != null);
@@ -511,6 +665,12 @@ class _$NetworkError implements NetworkError {
     @required Result networkError(NetworkError value),
     @required Result cachingError(CachingError value),
     @required Result forbiddenAccessToURLError(ForbiddenAccessToURLError value),
+    @required Result emptyError(EmptyError value),
+    @required Result locationError(LocationError value),
+    @required Result invalid(Invalid value),
+    @required Result permissionDeniedError(PermissionDeniedError value),
+    @required
+        Result disabledLocationServiceError(DisabledLocationService value),
   }) {
     assert(serverError != null);
     assert(socketError != null);
@@ -518,6 +678,11 @@ class _$NetworkError implements NetworkError {
     assert(networkError != null);
     assert(cachingError != null);
     assert(forbiddenAccessToURLError != null);
+    assert(emptyError != null);
+    assert(locationError != null);
+    assert(invalid != null);
+    assert(permissionDeniedError != null);
+    assert(disabledLocationServiceError != null);
     return networkError(this);
   }
 
@@ -530,6 +695,11 @@ class _$NetworkError implements NetworkError {
     Result networkError(NetworkError value),
     Result cachingError(CachingError value),
     Result forbiddenAccessToURLError(ForbiddenAccessToURLError value),
+    Result emptyError(EmptyError value),
+    Result locationError(LocationError value),
+    Result invalid(Invalid value),
+    Result permissionDeniedError(PermissionDeniedError value),
+    Result disabledLocationServiceError(DisabledLocationService value),
     @required Result orElse(),
   }) {
     assert(orElse != null);
@@ -585,6 +755,11 @@ class _$CachingError implements CachingError {
     @required Result networkError(),
     @required Result cachingError(),
     @required Result forbiddenAccessToURLError(),
+    @required Result emptyError(),
+    @required Result locationError(),
+    @required Result invalid(),
+    @required Result permissionDeniedError(),
+    @required Result disabledLocationServiceError(),
   }) {
     assert(serverError != null);
     assert(socketError != null);
@@ -592,6 +767,11 @@ class _$CachingError implements CachingError {
     assert(networkError != null);
     assert(cachingError != null);
     assert(forbiddenAccessToURLError != null);
+    assert(emptyError != null);
+    assert(locationError != null);
+    assert(invalid != null);
+    assert(permissionDeniedError != null);
+    assert(disabledLocationServiceError != null);
     return cachingError();
   }
 
@@ -604,6 +784,11 @@ class _$CachingError implements CachingError {
     Result networkError(),
     Result cachingError(),
     Result forbiddenAccessToURLError(),
+    Result emptyError(),
+    Result locationError(),
+    Result invalid(),
+    Result permissionDeniedError(),
+    Result disabledLocationServiceError(),
     @required Result orElse(),
   }) {
     assert(orElse != null);
@@ -622,6 +807,12 @@ class _$CachingError implements CachingError {
     @required Result networkError(NetworkError value),
     @required Result cachingError(CachingError value),
     @required Result forbiddenAccessToURLError(ForbiddenAccessToURLError value),
+    @required Result emptyError(EmptyError value),
+    @required Result locationError(LocationError value),
+    @required Result invalid(Invalid value),
+    @required Result permissionDeniedError(PermissionDeniedError value),
+    @required
+        Result disabledLocationServiceError(DisabledLocationService value),
   }) {
     assert(serverError != null);
     assert(socketError != null);
@@ -629,6 +820,11 @@ class _$CachingError implements CachingError {
     assert(networkError != null);
     assert(cachingError != null);
     assert(forbiddenAccessToURLError != null);
+    assert(emptyError != null);
+    assert(locationError != null);
+    assert(invalid != null);
+    assert(permissionDeniedError != null);
+    assert(disabledLocationServiceError != null);
     return cachingError(this);
   }
 
@@ -641,6 +837,11 @@ class _$CachingError implements CachingError {
     Result networkError(NetworkError value),
     Result cachingError(CachingError value),
     Result forbiddenAccessToURLError(ForbiddenAccessToURLError value),
+    Result emptyError(EmptyError value),
+    Result locationError(LocationError value),
+    Result invalid(Invalid value),
+    Result permissionDeniedError(PermissionDeniedError value),
+    Result disabledLocationServiceError(DisabledLocationService value),
     @required Result orElse(),
   }) {
     assert(orElse != null);
@@ -698,6 +899,11 @@ class _$ForbiddenAccessToURLError implements ForbiddenAccessToURLError {
     @required Result networkError(),
     @required Result cachingError(),
     @required Result forbiddenAccessToURLError(),
+    @required Result emptyError(),
+    @required Result locationError(),
+    @required Result invalid(),
+    @required Result permissionDeniedError(),
+    @required Result disabledLocationServiceError(),
   }) {
     assert(serverError != null);
     assert(socketError != null);
@@ -705,6 +911,11 @@ class _$ForbiddenAccessToURLError implements ForbiddenAccessToURLError {
     assert(networkError != null);
     assert(cachingError != null);
     assert(forbiddenAccessToURLError != null);
+    assert(emptyError != null);
+    assert(locationError != null);
+    assert(invalid != null);
+    assert(permissionDeniedError != null);
+    assert(disabledLocationServiceError != null);
     return forbiddenAccessToURLError();
   }
 
@@ -717,6 +928,11 @@ class _$ForbiddenAccessToURLError implements ForbiddenAccessToURLError {
     Result networkError(),
     Result cachingError(),
     Result forbiddenAccessToURLError(),
+    Result emptyError(),
+    Result locationError(),
+    Result invalid(),
+    Result permissionDeniedError(),
+    Result disabledLocationServiceError(),
     @required Result orElse(),
   }) {
     assert(orElse != null);
@@ -735,6 +951,12 @@ class _$ForbiddenAccessToURLError implements ForbiddenAccessToURLError {
     @required Result networkError(NetworkError value),
     @required Result cachingError(CachingError value),
     @required Result forbiddenAccessToURLError(ForbiddenAccessToURLError value),
+    @required Result emptyError(EmptyError value),
+    @required Result locationError(LocationError value),
+    @required Result invalid(Invalid value),
+    @required Result permissionDeniedError(PermissionDeniedError value),
+    @required
+        Result disabledLocationServiceError(DisabledLocationService value),
   }) {
     assert(serverError != null);
     assert(socketError != null);
@@ -742,6 +964,11 @@ class _$ForbiddenAccessToURLError implements ForbiddenAccessToURLError {
     assert(networkError != null);
     assert(cachingError != null);
     assert(forbiddenAccessToURLError != null);
+    assert(emptyError != null);
+    assert(locationError != null);
+    assert(invalid != null);
+    assert(permissionDeniedError != null);
+    assert(disabledLocationServiceError != null);
     return forbiddenAccessToURLError(this);
   }
 
@@ -754,6 +981,11 @@ class _$ForbiddenAccessToURLError implements ForbiddenAccessToURLError {
     Result networkError(NetworkError value),
     Result cachingError(CachingError value),
     Result forbiddenAccessToURLError(ForbiddenAccessToURLError value),
+    Result emptyError(EmptyError value),
+    Result locationError(LocationError value),
+    Result invalid(Invalid value),
+    Result permissionDeniedError(PermissionDeniedError value),
+    Result disabledLocationServiceError(DisabledLocationService value),
     @required Result orElse(),
   }) {
     assert(orElse != null);
@@ -766,4 +998,713 @@ class _$ForbiddenAccessToURLError implements ForbiddenAccessToURLError {
 
 abstract class ForbiddenAccessToURLError implements Failure {
   const factory ForbiddenAccessToURLError() = _$ForbiddenAccessToURLError;
+}
+
+abstract class $EmptyErrorCopyWith<$Res> {
+  factory $EmptyErrorCopyWith(
+          EmptyError value, $Res Function(EmptyError) then) =
+      _$EmptyErrorCopyWithImpl<$Res>;
+}
+
+class _$EmptyErrorCopyWithImpl<$Res> extends _$FailureCopyWithImpl<$Res>
+    implements $EmptyErrorCopyWith<$Res> {
+  _$EmptyErrorCopyWithImpl(EmptyError _value, $Res Function(EmptyError) _then)
+      : super(_value, (v) => _then(v as EmptyError));
+
+  @override
+  EmptyError get _value => super._value as EmptyError;
+}
+
+class _$EmptyError implements EmptyError {
+  const _$EmptyError();
+
+  @override
+  String toString() {
+    return 'Failure.emptyError()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) || (other is EmptyError);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  Result when<Result extends Object>({
+    @required Result serverError(),
+    @required Result socketError(),
+    @required Result notFoundError(),
+    @required Result networkError(),
+    @required Result cachingError(),
+    @required Result forbiddenAccessToURLError(),
+    @required Result emptyError(),
+    @required Result locationError(),
+    @required Result invalid(),
+    @required Result permissionDeniedError(),
+    @required Result disabledLocationServiceError(),
+  }) {
+    assert(serverError != null);
+    assert(socketError != null);
+    assert(notFoundError != null);
+    assert(networkError != null);
+    assert(cachingError != null);
+    assert(forbiddenAccessToURLError != null);
+    assert(emptyError != null);
+    assert(locationError != null);
+    assert(invalid != null);
+    assert(permissionDeniedError != null);
+    assert(disabledLocationServiceError != null);
+    return emptyError();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeWhen<Result extends Object>({
+    Result serverError(),
+    Result socketError(),
+    Result notFoundError(),
+    Result networkError(),
+    Result cachingError(),
+    Result forbiddenAccessToURLError(),
+    Result emptyError(),
+    Result locationError(),
+    Result invalid(),
+    Result permissionDeniedError(),
+    Result disabledLocationServiceError(),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (emptyError != null) {
+      return emptyError();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result map<Result extends Object>({
+    @required Result serverError(ServerError value),
+    @required Result socketError(SocketError value),
+    @required Result notFoundError(NotFoundError value),
+    @required Result networkError(NetworkError value),
+    @required Result cachingError(CachingError value),
+    @required Result forbiddenAccessToURLError(ForbiddenAccessToURLError value),
+    @required Result emptyError(EmptyError value),
+    @required Result locationError(LocationError value),
+    @required Result invalid(Invalid value),
+    @required Result permissionDeniedError(PermissionDeniedError value),
+    @required
+        Result disabledLocationServiceError(DisabledLocationService value),
+  }) {
+    assert(serverError != null);
+    assert(socketError != null);
+    assert(notFoundError != null);
+    assert(networkError != null);
+    assert(cachingError != null);
+    assert(forbiddenAccessToURLError != null);
+    assert(emptyError != null);
+    assert(locationError != null);
+    assert(invalid != null);
+    assert(permissionDeniedError != null);
+    assert(disabledLocationServiceError != null);
+    return emptyError(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeMap<Result extends Object>({
+    Result serverError(ServerError value),
+    Result socketError(SocketError value),
+    Result notFoundError(NotFoundError value),
+    Result networkError(NetworkError value),
+    Result cachingError(CachingError value),
+    Result forbiddenAccessToURLError(ForbiddenAccessToURLError value),
+    Result emptyError(EmptyError value),
+    Result locationError(LocationError value),
+    Result invalid(Invalid value),
+    Result permissionDeniedError(PermissionDeniedError value),
+    Result disabledLocationServiceError(DisabledLocationService value),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (emptyError != null) {
+      return emptyError(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class EmptyError implements Failure {
+  const factory EmptyError() = _$EmptyError;
+}
+
+abstract class $LocationErrorCopyWith<$Res> {
+  factory $LocationErrorCopyWith(
+          LocationError value, $Res Function(LocationError) then) =
+      _$LocationErrorCopyWithImpl<$Res>;
+}
+
+class _$LocationErrorCopyWithImpl<$Res> extends _$FailureCopyWithImpl<$Res>
+    implements $LocationErrorCopyWith<$Res> {
+  _$LocationErrorCopyWithImpl(
+      LocationError _value, $Res Function(LocationError) _then)
+      : super(_value, (v) => _then(v as LocationError));
+
+  @override
+  LocationError get _value => super._value as LocationError;
+}
+
+class _$LocationError implements LocationError {
+  const _$LocationError();
+
+  @override
+  String toString() {
+    return 'Failure.locationError()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) || (other is LocationError);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  Result when<Result extends Object>({
+    @required Result serverError(),
+    @required Result socketError(),
+    @required Result notFoundError(),
+    @required Result networkError(),
+    @required Result cachingError(),
+    @required Result forbiddenAccessToURLError(),
+    @required Result emptyError(),
+    @required Result locationError(),
+    @required Result invalid(),
+    @required Result permissionDeniedError(),
+    @required Result disabledLocationServiceError(),
+  }) {
+    assert(serverError != null);
+    assert(socketError != null);
+    assert(notFoundError != null);
+    assert(networkError != null);
+    assert(cachingError != null);
+    assert(forbiddenAccessToURLError != null);
+    assert(emptyError != null);
+    assert(locationError != null);
+    assert(invalid != null);
+    assert(permissionDeniedError != null);
+    assert(disabledLocationServiceError != null);
+    return locationError();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeWhen<Result extends Object>({
+    Result serverError(),
+    Result socketError(),
+    Result notFoundError(),
+    Result networkError(),
+    Result cachingError(),
+    Result forbiddenAccessToURLError(),
+    Result emptyError(),
+    Result locationError(),
+    Result invalid(),
+    Result permissionDeniedError(),
+    Result disabledLocationServiceError(),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (locationError != null) {
+      return locationError();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result map<Result extends Object>({
+    @required Result serverError(ServerError value),
+    @required Result socketError(SocketError value),
+    @required Result notFoundError(NotFoundError value),
+    @required Result networkError(NetworkError value),
+    @required Result cachingError(CachingError value),
+    @required Result forbiddenAccessToURLError(ForbiddenAccessToURLError value),
+    @required Result emptyError(EmptyError value),
+    @required Result locationError(LocationError value),
+    @required Result invalid(Invalid value),
+    @required Result permissionDeniedError(PermissionDeniedError value),
+    @required
+        Result disabledLocationServiceError(DisabledLocationService value),
+  }) {
+    assert(serverError != null);
+    assert(socketError != null);
+    assert(notFoundError != null);
+    assert(networkError != null);
+    assert(cachingError != null);
+    assert(forbiddenAccessToURLError != null);
+    assert(emptyError != null);
+    assert(locationError != null);
+    assert(invalid != null);
+    assert(permissionDeniedError != null);
+    assert(disabledLocationServiceError != null);
+    return locationError(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeMap<Result extends Object>({
+    Result serverError(ServerError value),
+    Result socketError(SocketError value),
+    Result notFoundError(NotFoundError value),
+    Result networkError(NetworkError value),
+    Result cachingError(CachingError value),
+    Result forbiddenAccessToURLError(ForbiddenAccessToURLError value),
+    Result emptyError(EmptyError value),
+    Result locationError(LocationError value),
+    Result invalid(Invalid value),
+    Result permissionDeniedError(PermissionDeniedError value),
+    Result disabledLocationServiceError(DisabledLocationService value),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (locationError != null) {
+      return locationError(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class LocationError implements Failure {
+  const factory LocationError() = _$LocationError;
+}
+
+abstract class $InvalidCopyWith<$Res> {
+  factory $InvalidCopyWith(Invalid value, $Res Function(Invalid) then) =
+      _$InvalidCopyWithImpl<$Res>;
+}
+
+class _$InvalidCopyWithImpl<$Res> extends _$FailureCopyWithImpl<$Res>
+    implements $InvalidCopyWith<$Res> {
+  _$InvalidCopyWithImpl(Invalid _value, $Res Function(Invalid) _then)
+      : super(_value, (v) => _then(v as Invalid));
+
+  @override
+  Invalid get _value => super._value as Invalid;
+}
+
+class _$Invalid implements Invalid {
+  const _$Invalid();
+
+  @override
+  String toString() {
+    return 'Failure.invalid()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) || (other is Invalid);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  Result when<Result extends Object>({
+    @required Result serverError(),
+    @required Result socketError(),
+    @required Result notFoundError(),
+    @required Result networkError(),
+    @required Result cachingError(),
+    @required Result forbiddenAccessToURLError(),
+    @required Result emptyError(),
+    @required Result locationError(),
+    @required Result invalid(),
+    @required Result permissionDeniedError(),
+    @required Result disabledLocationServiceError(),
+  }) {
+    assert(serverError != null);
+    assert(socketError != null);
+    assert(notFoundError != null);
+    assert(networkError != null);
+    assert(cachingError != null);
+    assert(forbiddenAccessToURLError != null);
+    assert(emptyError != null);
+    assert(locationError != null);
+    assert(invalid != null);
+    assert(permissionDeniedError != null);
+    assert(disabledLocationServiceError != null);
+    return invalid();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeWhen<Result extends Object>({
+    Result serverError(),
+    Result socketError(),
+    Result notFoundError(),
+    Result networkError(),
+    Result cachingError(),
+    Result forbiddenAccessToURLError(),
+    Result emptyError(),
+    Result locationError(),
+    Result invalid(),
+    Result permissionDeniedError(),
+    Result disabledLocationServiceError(),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (invalid != null) {
+      return invalid();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result map<Result extends Object>({
+    @required Result serverError(ServerError value),
+    @required Result socketError(SocketError value),
+    @required Result notFoundError(NotFoundError value),
+    @required Result networkError(NetworkError value),
+    @required Result cachingError(CachingError value),
+    @required Result forbiddenAccessToURLError(ForbiddenAccessToURLError value),
+    @required Result emptyError(EmptyError value),
+    @required Result locationError(LocationError value),
+    @required Result invalid(Invalid value),
+    @required Result permissionDeniedError(PermissionDeniedError value),
+    @required
+        Result disabledLocationServiceError(DisabledLocationService value),
+  }) {
+    assert(serverError != null);
+    assert(socketError != null);
+    assert(notFoundError != null);
+    assert(networkError != null);
+    assert(cachingError != null);
+    assert(forbiddenAccessToURLError != null);
+    assert(emptyError != null);
+    assert(locationError != null);
+    assert(invalid != null);
+    assert(permissionDeniedError != null);
+    assert(disabledLocationServiceError != null);
+    return invalid(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeMap<Result extends Object>({
+    Result serverError(ServerError value),
+    Result socketError(SocketError value),
+    Result notFoundError(NotFoundError value),
+    Result networkError(NetworkError value),
+    Result cachingError(CachingError value),
+    Result forbiddenAccessToURLError(ForbiddenAccessToURLError value),
+    Result emptyError(EmptyError value),
+    Result locationError(LocationError value),
+    Result invalid(Invalid value),
+    Result permissionDeniedError(PermissionDeniedError value),
+    Result disabledLocationServiceError(DisabledLocationService value),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (invalid != null) {
+      return invalid(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class Invalid implements Failure {
+  const factory Invalid() = _$Invalid;
+}
+
+abstract class $PermissionDeniedErrorCopyWith<$Res> {
+  factory $PermissionDeniedErrorCopyWith(PermissionDeniedError value,
+          $Res Function(PermissionDeniedError) then) =
+      _$PermissionDeniedErrorCopyWithImpl<$Res>;
+}
+
+class _$PermissionDeniedErrorCopyWithImpl<$Res>
+    extends _$FailureCopyWithImpl<$Res>
+    implements $PermissionDeniedErrorCopyWith<$Res> {
+  _$PermissionDeniedErrorCopyWithImpl(
+      PermissionDeniedError _value, $Res Function(PermissionDeniedError) _then)
+      : super(_value, (v) => _then(v as PermissionDeniedError));
+
+  @override
+  PermissionDeniedError get _value => super._value as PermissionDeniedError;
+}
+
+class _$PermissionDeniedError implements PermissionDeniedError {
+  const _$PermissionDeniedError();
+
+  @override
+  String toString() {
+    return 'Failure.permissionDeniedError()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) || (other is PermissionDeniedError);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  Result when<Result extends Object>({
+    @required Result serverError(),
+    @required Result socketError(),
+    @required Result notFoundError(),
+    @required Result networkError(),
+    @required Result cachingError(),
+    @required Result forbiddenAccessToURLError(),
+    @required Result emptyError(),
+    @required Result locationError(),
+    @required Result invalid(),
+    @required Result permissionDeniedError(),
+    @required Result disabledLocationServiceError(),
+  }) {
+    assert(serverError != null);
+    assert(socketError != null);
+    assert(notFoundError != null);
+    assert(networkError != null);
+    assert(cachingError != null);
+    assert(forbiddenAccessToURLError != null);
+    assert(emptyError != null);
+    assert(locationError != null);
+    assert(invalid != null);
+    assert(permissionDeniedError != null);
+    assert(disabledLocationServiceError != null);
+    return permissionDeniedError();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeWhen<Result extends Object>({
+    Result serverError(),
+    Result socketError(),
+    Result notFoundError(),
+    Result networkError(),
+    Result cachingError(),
+    Result forbiddenAccessToURLError(),
+    Result emptyError(),
+    Result locationError(),
+    Result invalid(),
+    Result permissionDeniedError(),
+    Result disabledLocationServiceError(),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (permissionDeniedError != null) {
+      return permissionDeniedError();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result map<Result extends Object>({
+    @required Result serverError(ServerError value),
+    @required Result socketError(SocketError value),
+    @required Result notFoundError(NotFoundError value),
+    @required Result networkError(NetworkError value),
+    @required Result cachingError(CachingError value),
+    @required Result forbiddenAccessToURLError(ForbiddenAccessToURLError value),
+    @required Result emptyError(EmptyError value),
+    @required Result locationError(LocationError value),
+    @required Result invalid(Invalid value),
+    @required Result permissionDeniedError(PermissionDeniedError value),
+    @required
+        Result disabledLocationServiceError(DisabledLocationService value),
+  }) {
+    assert(serverError != null);
+    assert(socketError != null);
+    assert(notFoundError != null);
+    assert(networkError != null);
+    assert(cachingError != null);
+    assert(forbiddenAccessToURLError != null);
+    assert(emptyError != null);
+    assert(locationError != null);
+    assert(invalid != null);
+    assert(permissionDeniedError != null);
+    assert(disabledLocationServiceError != null);
+    return permissionDeniedError(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeMap<Result extends Object>({
+    Result serverError(ServerError value),
+    Result socketError(SocketError value),
+    Result notFoundError(NotFoundError value),
+    Result networkError(NetworkError value),
+    Result cachingError(CachingError value),
+    Result forbiddenAccessToURLError(ForbiddenAccessToURLError value),
+    Result emptyError(EmptyError value),
+    Result locationError(LocationError value),
+    Result invalid(Invalid value),
+    Result permissionDeniedError(PermissionDeniedError value),
+    Result disabledLocationServiceError(DisabledLocationService value),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (permissionDeniedError != null) {
+      return permissionDeniedError(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class PermissionDeniedError implements Failure {
+  const factory PermissionDeniedError() = _$PermissionDeniedError;
+}
+
+abstract class $DisabledLocationServiceCopyWith<$Res> {
+  factory $DisabledLocationServiceCopyWith(DisabledLocationService value,
+          $Res Function(DisabledLocationService) then) =
+      _$DisabledLocationServiceCopyWithImpl<$Res>;
+}
+
+class _$DisabledLocationServiceCopyWithImpl<$Res>
+    extends _$FailureCopyWithImpl<$Res>
+    implements $DisabledLocationServiceCopyWith<$Res> {
+  _$DisabledLocationServiceCopyWithImpl(DisabledLocationService _value,
+      $Res Function(DisabledLocationService) _then)
+      : super(_value, (v) => _then(v as DisabledLocationService));
+
+  @override
+  DisabledLocationService get _value => super._value as DisabledLocationService;
+}
+
+class _$DisabledLocationService implements DisabledLocationService {
+  const _$DisabledLocationService();
+
+  @override
+  String toString() {
+    return 'Failure.disabledLocationServiceError()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) || (other is DisabledLocationService);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  Result when<Result extends Object>({
+    @required Result serverError(),
+    @required Result socketError(),
+    @required Result notFoundError(),
+    @required Result networkError(),
+    @required Result cachingError(),
+    @required Result forbiddenAccessToURLError(),
+    @required Result emptyError(),
+    @required Result locationError(),
+    @required Result invalid(),
+    @required Result permissionDeniedError(),
+    @required Result disabledLocationServiceError(),
+  }) {
+    assert(serverError != null);
+    assert(socketError != null);
+    assert(notFoundError != null);
+    assert(networkError != null);
+    assert(cachingError != null);
+    assert(forbiddenAccessToURLError != null);
+    assert(emptyError != null);
+    assert(locationError != null);
+    assert(invalid != null);
+    assert(permissionDeniedError != null);
+    assert(disabledLocationServiceError != null);
+    return disabledLocationServiceError();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeWhen<Result extends Object>({
+    Result serverError(),
+    Result socketError(),
+    Result notFoundError(),
+    Result networkError(),
+    Result cachingError(),
+    Result forbiddenAccessToURLError(),
+    Result emptyError(),
+    Result locationError(),
+    Result invalid(),
+    Result permissionDeniedError(),
+    Result disabledLocationServiceError(),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (disabledLocationServiceError != null) {
+      return disabledLocationServiceError();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result map<Result extends Object>({
+    @required Result serverError(ServerError value),
+    @required Result socketError(SocketError value),
+    @required Result notFoundError(NotFoundError value),
+    @required Result networkError(NetworkError value),
+    @required Result cachingError(CachingError value),
+    @required Result forbiddenAccessToURLError(ForbiddenAccessToURLError value),
+    @required Result emptyError(EmptyError value),
+    @required Result locationError(LocationError value),
+    @required Result invalid(Invalid value),
+    @required Result permissionDeniedError(PermissionDeniedError value),
+    @required
+        Result disabledLocationServiceError(DisabledLocationService value),
+  }) {
+    assert(serverError != null);
+    assert(socketError != null);
+    assert(notFoundError != null);
+    assert(networkError != null);
+    assert(cachingError != null);
+    assert(forbiddenAccessToURLError != null);
+    assert(emptyError != null);
+    assert(locationError != null);
+    assert(invalid != null);
+    assert(permissionDeniedError != null);
+    assert(disabledLocationServiceError != null);
+    return disabledLocationServiceError(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeMap<Result extends Object>({
+    Result serverError(ServerError value),
+    Result socketError(SocketError value),
+    Result notFoundError(NotFoundError value),
+    Result networkError(NetworkError value),
+    Result cachingError(CachingError value),
+    Result forbiddenAccessToURLError(ForbiddenAccessToURLError value),
+    Result emptyError(EmptyError value),
+    Result locationError(LocationError value),
+    Result invalid(Invalid value),
+    Result permissionDeniedError(PermissionDeniedError value),
+    Result disabledLocationServiceError(DisabledLocationService value),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (disabledLocationServiceError != null) {
+      return disabledLocationServiceError(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class DisabledLocationService implements Failure {
+  const factory DisabledLocationService() = _$DisabledLocationService;
 }
