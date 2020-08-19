@@ -7,8 +7,6 @@ part of 'failures.dart';
 // FreezedGenerator
 // **************************************************************************
 
-T _$identity<T>(T value) => value;
-
 class _$FailureTearOff {
   const _$FailureTearOff();
 
